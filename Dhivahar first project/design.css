@@ -1,0 +1,80 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.one{
+    background-image: url(/images/pexels-chokniti-khongchum-1197604-2280571.jpg);
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.two nav{
+    width: 100%;
+    text-align: end;
+}
+.two nav li{
+    display: inline-block;
+    margin-right: 2em;
+}
+nav ul li a{
+    color: blue;
+    font-size: 1em;
+    text-decoration: none;
+    list-style: none;
+}
+.five i{
+    font-size: 1.3em;
+}
+.three a i{
+    padding-right: .25em;
+    font-size: 1.2em;
+    color: green;
+}
+.six{
+    width: 100%;
+    height: 29vh;
+    display: flex;
+    align-items: center;
+    margin-top: 9%;
+    padding-left: 7em;
+}
+.six a{
+    border: 1px solid black;
+    font-size: 1.2em;
+    background: linear-gradient(rgba(0,0,0,0.75),rgba(0,0,0,0.75));
+    border: 0;
+    padding: 1em;
+    color: white;
+}
+.six .seven{
+    background-color:red;
+    color: white;
+}
+.six .eight:hover{
+    background-color: red;
+}
+.six .nine{
+    align-self: self-start;
+    background: white;
+    color: black;
+}
+.ten{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.ten h1{
+    font-size: 3em;
+    color: wheat;
+}
+.ten h3{
+    font-size: 1.3em;
+    color: wheat;
+    padding: .50em;
+}
+
