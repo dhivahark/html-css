@@ -1,0 +1,712 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.hole{
+    background-image: url(/images/pexels-chokniti-khongchum-1197604-2280571.jpg);
+    width: 100%;
+    height: 100vh;
+    padding: 2%;
+    background-position: center;
+    background-size: cover;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+.navbar img:hover{
+    border-radius: .70em;
+    transition: 2s;
+}
+.navbar p:hover{
+    background-color: blue;
+    border-radius: .70em;
+    transition: 2s;
+}
+.navbar{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+#alsothree{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 1em;
+}
+.navbar .menu-icons{
+    width: 25px;
+    cursor: pointer;
+    padding-top: .85em;
+    padding-right: .85em;
+    display: none;
+}
+.try img{
+    width: 25px;
+    cursor: pointer;
+    padding-top: 1em;
+    display: none;
+}
+nav{
+    flex: 1;
+    text-align: end;
+    padding-right: 2em;
+}
+nav ul li{
+    list-style: none;
+    display: inline-block;
+    margin-right: 30px;
+}
+nav ul li a{
+    text-decoration: none;
+    color: #000;
+    font-size: 15px;
+}
+.try{
+    padding: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+#menuList .nun{
+    font-size: 1.1em;
+    color: #FF9100;
+}
+#menuList .non{
+    font-size: 1.3em;
+    color: #4E31AA;
+}
+#menuList .nun:hover{
+    color: green;
+}
+#menuList .non:hover{
+    color: green;
+}
+#menuList li a i{
+    margin-right: .40em;
+}
+.center{
+    width: 100%;
+    border: 1px solid black;
+    text-align: center;
+    color: #800000;
+    border: 0;
+}
+.center:hover{
+    color: green;
+}
+.center .size{
+    padding: .20em;
+    font-size: 3.5em;
+}
+.center .sizeone{
+    padding: .10em;
+    font-size: 2em;
+}
+.center{
+    animation-name: round;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes round{
+    0%{
+        transform: translateX(-900px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+.alsofive{
+    width: 100%;
+    padding-right: 5em;
+    box-sizing: border-box;
+    overflow: hidden;
+    border: 1px solid black;
+    height: 20vh;
+    margin-top: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: flex-start;
+    border: 0;
+}
+.alsofive #alsosix{
+    background-color: rgba(0,0,0,0.5);
+}
+#alsosix li{
+    display: inline-block;
+    background-color: rgba(0,0,0,0.5);
+    text-align: end;
+    list-style: none;
+    border: 1px solid black;
+    border: 0;
+    padding: 1em;
+    transition: 1s;
+}
+#alsosix li a{
+    text-decoration: none;
+    color: white;
+}
+#alsosix li:nth-child(1){
+    background: rgba(255, 0, 0, 0.7);
+}
+#alsosix li:nth-child(8){
+    margin-left: .50em;
+    background: rgba(255, 0, 0, 0.7);
+}
+#alsosix li:hover{
+    background: rgba(3, 247, 23, 0.7);
+}
+
+.alsofive{
+    animation-name: circle;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+}
+@keyframes circle{
+    0%{
+        transform: translateX(900px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+.thirteen img{
+    width: 10em;
+    height: 8em;
+    cursor: pointer;
+    border: 1px solid black;
+    border-radius: 100%;
+}
+.eleven{
+    width: 100%;
+    padding: 2em;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+    overflow: hidden;
+
+}
+.eleven .thirteen{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.thirteen .fifty{
+    font-size: 1em;
+    cursor: pointer;
+    color: red;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.thirteen p{
+    font-size: .85em;
+}
+.thirteen .same{
+    font-size: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+.thirteen .low{
+    color: rgb(147, 238, 11);
+    padding-top: 1em;
+}
+.thirteen .different{
+    line-height: 1.4em;
+}
+.thirteen:nth-child(2) img{
+    font-size: 1.1em;
+}
+.thirteen:nth-child(2){
+    height: 18em;
+}
+.thirteen{
+    margin-top: 1em;
+}
+.thirteen:nth-child(1),.thirteen:nth-child(2),.verify{
+    animation-name: model;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+}
+@keyframes model{
+    0%{
+        transform: translateX(-900px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+.verify{
+    padding: .80em;
+    color: greenyellow;
+}
+.thirteen:nth-child(3),.thirteen:nth-child(4){
+    animation-name: local;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 3s;
+}
+@keyframes local{
+    0%{
+        transform: translateX(900px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+
+
+.gallery{
+    width: 900px;
+    display: flex;
+    overflow-x: scroll;
+}
+.gallery div{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    gap: 20px;
+    padding: 10px;
+    flex: none;
+}
+.gallery div img{
+    width: 100%;
+    filter: grayscale(100%);
+    transition: transform 0.5s;
+}
+.gallery div .one{
+    height: 14.4em;
+}
+.gallery div .two{
+    height: 14.4em;
+}
+.gallery::-webkit-scrollbar{
+    display: none;
+}
+.gallery-wrap i{
+    color: black;
+    font-size: 2em;
+    cursor: pointer;
+    margin: 40px;
+}
+.gallery-wrap{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 3% auto;
+}
+.gallery div img:hover{
+    filter: grayscale(0);
+    cursor: pointer;
+    transform: scale(1.1);
+}
+.headone{
+    border: 1px solid black;
+    text-align: center;
+    border: 0;
+    font-size: 2.2em;
+    padding: .50em;
+    color: green;
+}
+.headone:hover{
+    color: red;
+}
+.work{
+    text-align: end;
+}
+.work a{
+    border: 1px solid rgb(58, 55, 55);
+    background: rgb(58, 55, 55);
+    padding: 1em;
+    color: white;
+    border: 0;
+    font-size: 1.1em;
+    position: sticky;
+    top: auto;
+}
+.work a:hover{
+    color: green;
+}
+.better{
+    border: 1px solid black;
+    border: 0;
+    display: flex;
+    margin-top: 2em;
+    margin-left: 1em;
+    margin-right: 1em;
+}
+.power{
+    border: 1px solid black;
+    border: 0;
+    padding: .50em;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.power p:nth-child(1){
+    padding-top: .50em;
+    color: rgb(114, 111, 111);
+}
+.power p:nth-child(2){
+    padding-top: 1em;
+    color: rgb(114, 111, 111);
+}
+.low{
+    border: 1px solid black;
+    border: 0;
+    flex-basis: 50%;
+    display: flex;
+    flex-direction: column;
+}
+.low .dout{
+    border-radius: .70em .70em 0 0;
+    border: 1px solid black;
+    padding: 1em;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: whitesmoke;
+}
+.low .hit{
+    border: 1px solid black;
+    padding: .80em;
+    color: rgb(114, 111, 111);
+}
+.low .flop{
+    margin-top: .50em;
+    color: rgb(114, 111, 111);
+    border-radius: .70em;
+    border: 1px solid black;
+    display: flex;
+    justify-content: space-between;
+    padding: 1em;
+    background-color: whitesmoke;
+}
+.power,.youtube{
+    animation-name: square;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+}
+@keyframes square{
+    0%{
+        transform: translateX(-900px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+.low{
+    animation-name: getout;
+    animation-timing-function: ease-in;
+    animation-duration: 3s;
+    animation-iteration-count: 1;
+    animation-delay: 5s;
+}
+@keyframes getout{
+    0%{
+        transform: translateX(900px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+
+}
+.dout a{
+    color: red;
+    text-decoration: none;
+}
+.dout i{
+    border: 1px solid black;
+    background-color: red;
+    border-radius: 50%;
+    padding: .50em;
+}
+.youtube{
+    border:  1px solid black;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding-left: 1em;
+    border: 0;
+}
+.major{
+    display: flex;
+    padding: 2.5em;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+.major .out{
+    flex-basis: 30%;
+}
+.major .inside{
+    flex-basis: 30%;
+}
+.major .outside{
+    flex-basis: 30%;
+}
+.outside div img{
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+}
+.major .out{
+    display: flex;
+    flex-direction: column;
+    min-width: 240px;
+}
+.out .air{
+    display: flex;
+    color: dimgray;
+}
+.out .air .hello{
+    margin-left: 2em;
+}
+.out .hi{
+    margin-top: 2.5em;
+    color: dimgray;
+}
+.out ul{
+    margin-top: 2.5em;
+}
+.out ul li{
+    display: inline-block;
+    text-align: end;
+    margin-right: 1em;
+}
+.inside ul li a{
+    text-decoration: none;
+}
+.inside ul{
+    margin-top: 3em;
+}
+.inside ul li{
+    margin-top: 1em;
+}
+.inside p{
+    font-size: 1.5em;
+    color: dimgray;
+}
+.outside p{
+    font-size: 1.5em;
+    color: dimgray;
+}
+.outside .stop{
+    margin-top: 2em;
+}
+.major .inside{
+    min-width: 240px;
+}
+.major .outside{
+    min-width: 240px;
+}
+.major .out .air p{
+    font-size: 1.5em;
+}
+.major .out p{
+    font-size: 1em;
+}
+footer{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: red;
+    flex-wrap: wrap;
+    padding: 1.5em;
+    box-sizing: border-box;
+    overflow: hidden;
+}
+footer ul li{
+    display: inline-block;
+    margin-left: .50em;
+    font-size: 1.2em;
+}
+.just a i{
+    font-size: 4em;
+    color: black;
+}
+.just a{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2em;
+    color: black;
+    text-decoration: none;
+}
+footer ul li a{
+    color: black;
+    text-decoration: none;
+}
+footer ul li a:hover{
+    color: green;
+}
+.ford p a{
+    color: black;
+    text-decoration: none;
+    font-size: 1.2em;
+}
+.ford p a:hover{
+    color: green;
+}
+.ford p{
+    color: white;
+    font-size: 1.2em;
+}
+.just a:hover{
+    color: green;
+}
+.just a i:hover{
+    color: green;
+}
+footer{
+    animation-name: getoff;
+    animation-timing-function: ease-in;
+    animation-duration: 4s;
+    animation-iteration-count: 1;
+    animation-delay: 8s;
+}
+@keyframes getoff{
+    0%{
+        transform: translateX(-1500px);
+    }
+    50%{
+        transform: translateX(0px);
+    }
+    100%{
+        transform: translateX(0px);
+    }
+}
+@media only screen and (max-width:707px){
+    footer{
+        flex-direction: column;
+        row-gap: 2em;
+    }
+}
+@media only screen and (max-width:500px){
+    .center .size{
+        font-size: 2em;
+    }
+    .center .sizeone{
+        font-size: 1.3em;
+    }
+}
+
+@media only screen and (max-width:722px){
+    .better{
+        flex-wrap: wrap;
+        width: 100%;
+        justify-content: center;
+    }
+    .power{
+        flex-basis: 90%;
+    }
+    .low{
+        flex-basis: 90%;
+    }
+    .youtube{
+        margin: 1em 1em;
+    }
+}
+@media only screen and (max-width:606px){
+    .major .out{
+        margin-top: 2em;
+        flex-basis: 100%;
+    }
+    .major .inside{
+        margin-top: 2em;
+        flex-basis: 100%;
+    }
+    .major .outside{
+        margin-top: 2em;
+        flex-basis: 100%;
+    }
+}
+@media only screen and (max-width:870px){
+    .navbar .menu-icons{
+        display: block;
+    }
+    nav ul{
+        width: 100%;
+        background: rgba(0,0,0,0.5);
+        position: absolute;
+        top: 90px;
+        right: 0;
+        z-index: 2;
+    }
+    nav ul li{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #menuList .nun{
+        color: white;
+    }
+    #menuList .non i{
+        font-size: 1.4em;
+        color: white;
+    }
+    #menuList li:nth-child(3),#menuList li:nth-child(4){
+        padding-right: .40em;
+    }
+    #menuList{
+        overflow: hidden;
+        transition: 0.8s; 
+    }
+}
+@media only screen and (max-width:870px){
+    .try .menu-icons{
+        display: block;
+    }
+    #alsosix{
+        width: 100%;
+        background:  rgba(0,0,0,0.5);
+        position: absolute;
+        top: 180px;
+        right: 0;
+        z-index: 2;
+    }
+    .alsofive #alsosix li{
+        display: block;
+        text-align: center;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    #alsosix li a{
+        color: #fff;
+    }
+    #alsosix{
+        overflow: hidden;
+        transition: 0.8s;
+        padding-right: 1em;
+    }
+}
