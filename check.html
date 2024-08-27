@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Radio Buttons with Images</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <style>
+        /* Custom CSS for radio buttons */
+        .custom-radio {
+            display: inline-block;
+            position: relative;
+            margin-right: 15px; /* Adjust this value for spacing between radio buttons */
+            cursor: pointer;
+        }
+
+        .custom-radio input[type="radio"] {
+            display: none; /* Hide the default radio button */
+        }
+
+        .checkmark {
+            position: relative;
+            display: inline-block;
+            width: 30px; /* Adjust this value based on your image size */
+            height: 30px; /* Adjust this value based on your image size */
+            background-color: #eee; /* Adjust this value if needed */
+            border-radius: 50%;
+        }
+
+        .custom-radio input[type="radio"]:checked ~ .checkmark {
+            background-color: #007bff; /* Adjust this value for the color of the selected radio button */
+        }
+
+        .checkmark:after {
+            content: "";
+            display: none;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: 18px; /* Adjust this value to center the checkmark */
+            height: 18px; /* Adjust this value to center the checkmark */
+            border-radius: 50%;
+            background-color: #fff; /* Adjust this value for the color of the checkmark */
+        }
+
+        .custom-radio input[type="radio"]:checked ~ .checkmark:after {
+            display: block; /* Show the checkmark when radio button is checked */
+        }
+    </style>
+</head>
+<body>
+
+<div class="container mt-4">
+    <div class="row">
+        <div class="col-md-6">
+            <label class="custom-radio">
+                <input type="radio" name="radio" checked>
+                <img src="image/product1.jpg" alt="Image 1" class="img-fluid checkmark">
+            </label>
+        </div>
+        <div class="col-md-6">
+            <label class="custom-radio">
+                <input type="radio" name="radio">
+                <img src="image/product1.jpg" alt="Image 2" class="img-fluid checkmark">
+            </label>
+        </div>
+    </div>
+</div>
+
+<!-- Bootstrap JS (Optional) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
