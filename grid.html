@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CSS Grid Example</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; /* Define three columns */
+      grid-template-rows: 100px 200px;    /* Define two rows */
+      grid-template-areas: 
+        "header header header"
+        "sidebar main main"
+        "footer footer footer";          /* Define named grid areas */
+      grid-gap: 10px 20px;               /* Set gaps between grid items */
+      height: 400px;                     /* Set a fixed height for the container */
+      border: 1px solid #000;            /* Border for the container */
+    }
+    .item {
+      padding: 10px;                    /* Padding inside items */
+      border: 1px solid #ccc;           /* Border for items */
+      background-color: #f0f0f0;        /* Background color for items */
+    }
+    .header {
+      grid-area: header;                /* Assign item to named grid area */
+    }
+    .sidebar {
+      grid-area: sidebar;               /* Assign item to named grid area */
+    }
+    .main {
+      grid-area: main;                  /* Assign item to named grid area */
+    }
+    .footer {
+      grid-area: footer;                /* Assign item to named grid area */
+    }
+
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item header">Header</div>
+    <div class="item sidebar">Sidebar</div>
+    <div class="item main">Main Content</div>
+    <div class="item footer">Footer</div>
+
+  </div>
+</body>
+</html>
