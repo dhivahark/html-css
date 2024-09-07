@@ -1,25 +1,3 @@
-.first{
-    padding: .50em;
-    display: flex;
-    justify-content: space-around;
-}
-.second{
-    background-color: brown;
-}
-.third{
-    color: white;
-    text-decoration: none;
-}
-.third:hover{
-    color: greenyellow;
-}
-.non:hover{
-    color: greenyellow;
-}
-.non{
-    font-size: 1.3em;
-}
-
 /*STARTING PLACE OF HEADER DESIGNS HERE*/
 .one{
     display: flex;
@@ -28,7 +6,7 @@
 }
 .two{
     width: 40%;
-    padding-top: .50em;
+    padding-top: .20em;
     padding-left: 1em;
     padding-bottom: .30em;
 }
@@ -41,6 +19,7 @@
     width: 55%;
     display: flex;
     border-radius: 8px;
+    position: relative;
     padding: .50em;
 
 }
@@ -54,49 +33,57 @@
 .one nav a{
     text-decoration: none;
     color:white;
+    position: relative;
     display: inline-block;
     padding: 0 15px;
     width: 100%;
     font-size: .99em;
     height: 100%;
+    z-index: 1;
 }
 .one nav span{
+    position: absolute;
+    top: 0;
+    left: 0;
     width: 95px;
     height: 100%;
+    background: linear-gradient(45deg,rgba(178, 222, 39),rgba(178, 222, 39));
     border-radius: 8px;
-}
-.one nav a{
-    position: relative;
-}
-.one nav a::after{
-    content: '';
-    width: 0;
-    height: .50em;
-    position: absolute;
-    left: 0;
-    bottom: -.50em;
-    background-color: greenyellow;
     transition: 0.4s;
 }
-.one nav a:hover::after{
-    width: 74%;
+.one nav a:nth-child(1):hover~span{
+    left: 0;
+}
+.one nav a:nth-child(2):hover~span{
+    left: 135px;
+}
+.one nav a:nth-child(3):hover~span{
+    left: 259px;
+}
+.one nav a:nth-child(4):hover~span{
+    left: 400px;
+}
+.one nav a:nth-child(5):hover~span{
+    left: 527px;
 }
 /*ENDING PLACE OF HEADER DESIGNS */
-body{
+body,html{
     margin: 0;
     padding: 0;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    width: 100%;
+    height: 95vh;
+    font-family: sans-serif;
 }
 
 .six{
     width: 100%;
-    height: 85vh;
-    overflow: hidden;
-    box-sizing: border-box;
-    position: absolute;
+    height: 100%;
     background-size: cover;
     background-position: center;
-    animation: change 10s ease-in-out infinite;
+    overflow: hidden;
+    position: relative;
+    animation: change 30s infinite ease-in-out;
+    background-image: url(img\ 4.jpg);
 }
 @keyframes change{
     0%{
@@ -106,46 +93,28 @@ body{
         background-image: url(img\ 1.jpg);
     }
     100%{
-        background-image: url(img\ 2.jpg);
+        background-image: url(security-4907127_1920.jpg);
     }
 }
 
 /*main home page commands lines*/
 .seven{
-    position: absolute;
-    left: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-
+    margin: 9em 3em;
 }
 .seven form p:nth-child(1){
-    color: red;
-    font-weight: bolder;
     font-size: 2.5em;
 }
-.seven form p:nth-child(1) span{
-    color: blue;
-}
 .seven form p:nth-child(2){
-    color: yellow;
     font-size: 1.6em;
 }
 .seven .eight{
     font-size: 1em;
 }
 .seven form p:nth-child(3){
-    color: deeppink;
-    font-weight: bolder;
-    font-size: 1.4em;
+    font-size: 1.2em;
 }
 .seven form p:nth-child(4){
-    font-weight: bolder;
-    color:darkblue;
-    font-size: 1.3em;
-}
-.seven p:nth-child(2) a{
-    color: yellow;
+    font-size: 1.2em;
 }
 .seven form button{
     border-radius: 1em;
@@ -157,21 +126,28 @@ body{
     background: transparent;
     position: relative;
     overflow: hidden;
-    transition: 5s;
+    transition: 0.5s;
 }
 .seven button:hover{
-    background: linear-gradient(to right,rgb(250, 6, 6),rgb(6, 6, 247));
+    background-color: rgb(128,222,39);
 }
-.seven form button{
+.seven form p,p:nth-child(2) a,.seven form button{
     color: white;
+    animation: news 30s infinite ease-in-out;
+}
+@keyframes news{
+    0%{
+        color: white;
+    }
+    50%{
+        color: white;
+    }
+    100%{
+        color: white;
+    }
 }
 .eight:hover{
-    background: linear-gradient(to right,rgb(250, 6, 6),rgb(6, 6, 247));
-}
-.seven form{
-    position: absolute;
-    left: 3.5em;
-    top: 8em;
+    background-color:  rgb(128,222,39);
 }
 
 
