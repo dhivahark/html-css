@@ -1,0 +1,177 @@
+.first{
+    padding: .50em;
+    display: flex;
+    justify-content: space-around;
+}
+.second{
+    background-color: brown;
+}
+.third{
+    color: white;
+    text-decoration: none;
+}
+.third:hover{
+    color: greenyellow;
+}
+.non:hover{
+    color: greenyellow;
+}
+.non{
+    font-size: 1.3em;
+}
+
+/*STARTING PLACE OF HEADER DESIGNS HERE*/
+.one{
+    display: flex;
+    background: linear-gradient(to right,rgb(59, 58, 58),rgb(59, 58, 58));
+    height: 3em;
+}
+.two{
+    width: 40%;
+    padding-top: .50em;
+    padding-left: 1em;
+    padding-bottom: .30em;
+}
+.two a{
+    color: white;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+.one nav{
+    width: 55%;
+    display: flex;
+    border-radius: 8px;
+    padding: .50em;
+
+}
+.one .five{
+    width: 5%;
+    padding-top: .65em;
+    padding-left: 1em;
+    color: white;
+    display: none;
+}
+.one nav a{
+    text-decoration: none;
+    color:white;
+    display: inline-block;
+    padding: 0 15px;
+    width: 100%;
+    font-size: .99em;
+    height: 100%;
+}
+.one nav span{
+    width: 95px;
+    height: 100%;
+    border-radius: 8px;
+}
+.one nav a{
+    position: relative;
+}
+.one nav a::after{
+    content: '';
+    width: 0;
+    height: .50em;
+    position: absolute;
+    left: 0;
+    bottom: -.50em;
+    background-color: greenyellow;
+    transition: 0.4s;
+}
+.one nav a:hover::after{
+    width: 74%;
+}
+/*ENDING PLACE OF HEADER DESIGNS */
+body{
+    margin: 0;
+    padding: 0;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.six{
+    width: 100%;
+    height: 85vh;
+    overflow: hidden;
+    box-sizing: border-box;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    animation: change 10s ease-in-out infinite;
+}
+@keyframes change{
+    0%{
+        background-image: url(img\ 4.jpg);
+    }
+    50%{
+        background-image: url(img\ 1.jpg);
+    }
+    100%{
+        background-image: url(img\ 2.jpg);
+    }
+}
+
+/*main home page commands lines*/
+.seven{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+
+}
+.seven form p:nth-child(1){
+    color: red;
+    font-weight: bolder;
+    font-size: 2.5em;
+}
+.seven form p:nth-child(1) span{
+    color: blue;
+}
+.seven form p:nth-child(2){
+    color: yellow;
+    font-size: 1.6em;
+}
+.seven .eight{
+    font-size: 1em;
+}
+.seven form p:nth-child(3){
+    color: deeppink;
+    font-weight: bolder;
+    font-size: 1.4em;
+}
+.seven form p:nth-child(4){
+    font-weight: bolder;
+    color:darkblue;
+    font-size: 1.3em;
+}
+.seven p:nth-child(2) a{
+    color: yellow;
+}
+.seven form button{
+    border-radius: 1em;
+    width: 10em;
+    border: 2px solid #009688;
+    height: 2.5em;
+    color: #fff;
+    cursor: pointer;
+    background: transparent;
+    position: relative;
+    overflow: hidden;
+    transition: 5s;
+}
+.seven button:hover{
+    background: linear-gradient(to right,rgb(250, 6, 6),rgb(6, 6, 247));
+}
+.seven form button{
+    color: white;
+}
+.eight:hover{
+    background: linear-gradient(to right,rgb(250, 6, 6),rgb(6, 6, 247));
+}
+.seven form{
+    position: absolute;
+    left: 3.5em;
+    top: 8em;
+}
+
+
