@@ -1,0 +1,553 @@
+ /* Start the Header properties and values*/
+   :root{
+    --yellow:#ffC54D;
+    --green:#53BF9D;
+    --red:crimson;
+    --white:whitesmoke;
+}
+.command{
+    background-color: orange;
+    color: white;
+    text-align:center;
+}
+.command a{
+    margin-left: .25em;
+    color: yellow;
+}
+.command a:hover{
+    color: green;
+}
+header .one{
+    background-color: blue;
+}
+#navbartwo .navbarthree{
+    margin-left: 8em;
+}
+#navbartwo .navbarthree .navbarfour{
+    margin-left: 2em;
+}
+#navbartwo ul li{
+    position: relative;
+}
+#navbartwo ul li ul.dropdown-menu{
+    border: 1px solid pink;
+    position: absolute;
+    left: 0;
+    top: 2.5em;
+}
+#navbartwo ul li #moveleft.dropdown-menu{
+    right: 2.5em;
+}
+.carousel-item .carousel-caption .button{
+    background: linear-gradient( to right , red,blue);
+    color: white;
+    padding: .50em;
+    border-radius: .50em;
+    border: 0;
+    margin-top: .60em;
+}
+.carousel-item .carousel-caption .button:hover{
+    background: green;
+}
+.carousel-inner .carousel-item img {
+    width:100vw;
+    height:75vh;
+}
+.carousel-caption .changing-color{
+    color: orange;
+}
+.carousel-caption .changing{
+    color: greenyellow;
+}
+.dropdown-menu li .backcolor:hover{
+    background-color: green;
+}
+.backcolors li a:hover{
+    color: green;
+}
+.navbar-nav .nav-item .nav-link:hover{
+    background-color: green;
+    border-radius: .50em;
+}
+
+@media(max-width:992px){
+    #navbartwo ul li ul.dropdown-menu{
+        position: relative;
+        left: 0;
+        top: .20em;
+        width: 350px;
+    }
+
+}
+@media(max-width:1100px){
+    #navbartwo .navbarthree{
+        margin-left: 5em;
+    }
+    #navbartwo .navbarthree .navbarfour{
+        margin-left: 1em;
+    }
+}
+@media(max-width:1055px){
+    #navbartwo .navbarthree{
+        margin-left: 2.8em;
+    }
+    #navbartwo .navbarthree .navbarfour{
+        margin-left: .70em;
+    }
+}
+@media(max-width:430px){
+    #navbartwo .navbarthree{
+        margin-left: 0em;
+    }
+    #navbartwo ul li ul.dropdown-menu{
+        width: 330px;
+    }
+    #navbartwo .navbarthree .navbarfour{
+        margin-left: .2em;
+    }
+}
+@media(max-width:390px){
+    #navbartwo ul li ul.dropdown-menu{
+        width: 270px;
+    }
+}
+@media(max-width:990px){
+    #magic ul{
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    #magic ul li:nth-child(1){
+        min-width: 50%;
+    }
+    #magic ul li:nth-child(2){
+        min-width: 50%;
+    }
+    #magic ul li:nth-child(3){
+        min-width: 100%;
+    }
+}
+  /* End of Header properties and values*/
+
+.content-heading{
+    border: 1px solid black;
+    border: 0;
+    text-align: center;
+
+}
+.content-heading .content-item{
+    position: relative;
+    border: 1px solid #000000;
+    width: 100%;
+    height: 2em;
+    font-size: 1.6em;
+    font-weight: bolder;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+    animation-name: changingcolors;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+@keyframes changingcolors{
+    0%{
+        color: red;
+    }
+    35%{
+        color:darkmagenta;
+    }
+    70%{
+        color: green;
+    }
+    100%{
+        color: brown;
+    }
+}
+@media(max-width:550px){
+    .content-heading .content-item{
+        font-size: 1.1em;
+    }
+}
+@media(max-width:295px){
+    .content-heading .content-item{
+        font-size: .80em;
+    }
+}
+.img-one{
+    background-image: url(images/jason-goodman-Oalh2MojUuk-unsplash.jpg);
+    width: 100%;
+    height: 300px;
+    background-position: center;
+    background-size: cover;
+    overflow: hidden;
+}
+#img-one-again{
+    background-image: url(images/img\ 7.jpg);
+}
+
+.img-one .img-para{
+    border: 1px solid black;
+    text-align: center;
+    font-size: 1.4em;
+    padding: .50em;
+    background-color: rgba(7, 11, 238, 0.4);
+    margin-left: 1em;
+    margin-right: 1em;
+    border: 0;
+    margin-top: -4.5em;
+}
+.img-one .img-para span{
+    border: 1px solid black;
+    margin-left: .50em;
+    background-color: white;
+    border: 0;
+    color: black;
+    padding-left: .3em;
+    padding-right: .3em;
+}
+@media(max-width:480px){
+    .img-one .img-para{
+        font-size: 1.1em;
+    }
+}
+.img-magic button{
+    background-color: rgba(10, 224, 10,0.5);
+}
+.img-magic{
+    text-align: center;
+    transform: translateX(-45em);
+    padding-top: 4em;
+    width: 100%;
+    height: 100%;
+    font-size: 1.2em;
+    background-color: rgba(7, 11, 238, 0.4);
+}
+.img-one:hover .img-magic{
+    transform: translateX(0em);
+    transition-duration: 0.6s;
+    transition-timing-function: ease-in;
+}
+.img-one:hover .img-para{
+    transform: translateX(30em);
+    transition-duration: 0.5s;
+    transition-timing-function: ease-in;
+}
+.img-magic button:hover{
+    background-color: yellowgreen;
+}
+
+.img-size .img-width img{
+    width: 100%;
+    height: 30em;
+}
+.text-color{
+    color: red;
+}
+.img-size{
+    background: rgba(0,0,0,0.3);
+}
+.increase-font-two{
+    font-size: 1em;
+}
+.increase-font-one{
+    font-size: .90em;
+}
+.increase-font-three{
+    font-size: .93em;
+}
+.button-size{
+    width: 8.5em;
+    border: 1px solid black;
+    background: linear-gradient( to right , red,blue);
+    color: white;
+}
+.button-size:hover{
+    background: green;
+}
+.all-img{
+    border: 1px solid black;
+    border: none;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-top: .50em;
+    padding-bottom: .50em;
+}
+.all-img .img-here1{
+    background: linear-gradient(rgba(26, 4, 192, 0.3),rgba(26, 4, 192, 0.3)),url(images/juanjo-jaramillo-mZnx9429i94-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 19em;
+    height: 17em;
+    border-radius: 1em;
+    margin-top: 10px;
+}
+.all-img .img-here2{
+    background: linear-gradient(rgba(26, 4, 192, 0.3),rgba(26, 4, 192, 0.3)),url(images/arseny-togulev-MECKPoKJYjM-unsplash.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 19em;
+    height: 17em;
+    border-radius: 1em;
+    margin-top: 10px;
+}
+.all-img .img-here3{
+    background: linear-gradient(rgba(26, 4, 192, 0.3),rgba(26, 4, 192, 0.3)),url(images/2151841688.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 19em;
+    height: 17em;
+    border-radius: 1em;
+    margin-top: 10px;
+}
+.all-img .img-here4{
+    background: linear-gradient(rgba(26, 4, 192, 0.3),rgba(26, 4, 192, 0.3)),url(images/3619.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 19em;
+    height: 17em;
+    border-radius: 1em;
+    margin-top: 10px;
+}
+.all-img .img-here5{
+    background: linear-gradient(rgba(26, 4, 192, 0.3),rgba(26, 4, 192, 0.3)),url(images/office-with-documents-money-accounts.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 19em;
+    height: 17em;
+    border-radius: 1em;
+    margin-top: 10px;
+}
+.all-img .img-here6{
+    background: linear-gradient(rgba(26, 4, 192, 0.3),rgba(26, 4, 192, 0.3)),url(images/pexels-energepic-com-27411-159888.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 19em;
+    height: 17em;
+    border-radius: 1em;
+    margin-top: 10px;
+}
+
+.img-here-padding{
+    border: 1px solid black;
+    border: none;
+    margin-top: 7.9em;
+    padding-left: .90em;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.img-font{
+    padding-left: .90em;
+    color: white;
+    font-size: 1.1em;
+    animation-name: lotofcolors;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.img-font:hover{
+    color: greenyellow;
+    animation: none;
+}
+
+@keyframes lotofcolors{
+    0%{
+        color: red;
+    }
+    50%{
+        color: yellow;
+    }
+    100%{
+        color: pink;
+    }
+}
+@media(max-width:992px){
+    .img-here{
+        margin-top: 1.5em;
+    }
+}
+/*placements companies images altrations here..................................*/
+.img-sizes{
+    width: 14em;
+    height: 6em;
+    margin-top: 1.5em;
+    border: 1px solid rgb(228, 223, 223);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow:-1px 8px 8px rgb(241, 239, 239);
+}
+.img-sizes .img-total-size{
+    width: 8em;
+    height: 3em;
+}
+.img-sizes .img-total-size-extra{
+    width: 11em;
+    height: 5em;
+}
+
+
+/*ALL headings */
+.heading-design{
+    animation-name: changingcolors;
+    animation-duration: 5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+
+@keyframes changingcolors{
+    0%{
+        color: red;
+    }
+    35%{
+        color:darkmagenta;
+    }
+    70%{
+        color: green;
+    }
+    100%{
+        color: brown;
+    }
+}
+.image-width{
+    width: 100%;
+    height: 20px;
+}
+.full-background-color{
+    background: linear-gradient(rgb(245, 222, 179,0.5),rgb(245, 222, 179,0.5));
+    margin-top: 1em;
+}
+.borderforlink{
+    border: 1px solid green;
+    padding: .40em;
+    text-decoration: none;
+    border-radius: .50em;
+    color: red;
+}
+.borderforlink span{
+    margin-left: .50em;
+}
+.borderforlink:hover{
+    background-color: greenyellow;
+}
+@media(max-width:992px){
+    #topspace{
+        margin-top: 2em;
+    }
+}
+@media(max-width:550px){
+    .youtubevideo{
+        width: 21em;
+        height: 15em;
+    }
+}
+@media(max-width:400px){
+    .youtubevideo{
+        width: 17em;
+        height: 13em;
+    }
+}
+
+@media(max-width:318px){
+    .youtubevideo{
+        width: 15em;
+        height: 12em;
+    }
+}
+
+
+.text-size{
+    font-size: 1.1em;
+}
+.text-size-one{
+    font-size: 1.2em;
+    color: orangered;
+}
+.img-size-two{
+    height: 18em;
+    width: 25em;
+}
+@media(max-width:500px){
+    .img-size-two{
+        width: 21em;
+        height: 13em;
+    }
+}
+@media(max-width:385px){
+    .img-size-two{
+        width: 15em;
+        height: 12em;
+    }
+}
+
+.direction{
+    display: flex;
+    flex-direction: column;
+}
+.direction a,.list-style{
+    text-decoration: none;
+}
+.list-style-one{
+    text-decoration: none;
+    border: 1px solid black;
+    border: none;
+    margin-bottom: .20em;
+    padding: .25em;
+    color: white;
+    text-align: center;
+    background-color: rgb(53, 53, 103)
+}
+.list-style-one:hover{
+    background-color: green;
+}
+.hole-footer{
+    background: linear-gradient(rgb(245, 222, 179,0.5),rgb(245, 222, 179,0.5));
+}
+.heading-size{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+.atag-modify{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.social-media{
+    border: 1px solid lightslategrey;
+    padding: .25em;
+    border-radius: 1em;
+}
+.social-media:hover{
+    background-color: green;
+    color: white;
+}
+.img-font-two{
+    font-size: 1.1em;
+    animation-name: somecolors;
+    animation-duration: 4s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+}
+.img-font-two:hover{
+    color: green;
+    animation: none;
+}
+
+@keyframes somecolors{
+    0%{
+        color: red;
+    }
+    50%{
+        color: blue;
+    }
+    100%{
+        color: orangered;
+    }
+}
+@media(max-width:767px){
+    .marginanchertag{
+        padding-top: 2em;
+    }
+}
